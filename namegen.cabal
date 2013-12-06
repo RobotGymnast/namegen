@@ -1,0 +1,25 @@
+Name:               namegen
+Version:            0.0.0
+Synopsis:           Generate strings that sound like names
+License:            MIT
+Author:             Ben Foppa
+Homepage:           https://github.com/RobotGymnast/namegen
+Maintainer:         benjamin.foppa@gmail.com
+Build-Type:         Simple
+Cabal-Version:      >= 1.9.2
+
+Executable namegen
+    hs-source-dirs:    src/
+    ghc-options:       -Wall -Werror -threaded -rtsopts=all
+    main-is:           Main.hs
+
+    build-depends: 
+                    prelewd == 0.16.*,
+                    extensible-effects == 1.2.*,
+                    system-random-effect >= 0.3.3,
+                    system-random-effect < 0.4.0,
+                    base == 4.*
+
+source-repository head
+  type: git
+  location: https://github.com/RobotGymnast/namegen
